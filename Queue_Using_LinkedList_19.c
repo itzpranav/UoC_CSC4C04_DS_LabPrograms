@@ -1,3 +1,57 @@
+/*
+
+	Aim
+
+	Implement queue using linkedlist.
+
+	Algorithm
+
+		1. Start
+		2. Declare structure node with data elements data and next.
+		3. Do
+		 Print menu
+		1. Insert 2. Delete 3. Display 4. Exit
+		4. Read choice
+		5. If choice=1 then read the value and call insert(value)
+		6. If choice=2 then call delete()
+		7. If choice=3 then call display()
+		8. If choice=4 then Exit.
+		9. Until choice!=5 then
+		[end of loop]
+		10. Stop
+	Procedure:-
+	insert(value)
+		1. Allocate memory for new node.
+		2. Set newnode->data=value
+		3. newnode->next=null.
+		4. If front=null then
+		 Set front=newnode
+		 Else
+		 Set rear->next=newnode
+		 rear=newnode
+		[end of if structure]
+	delete()
+		1. If temp=null then print ‘Empty queue’
+		 Else
+		 Set temp=front.
+		 front=temp->next
+		 Print deleted element,item
+		 
+		3. free(temp)
+		[end of if structure]
+	display()
+		1. If temp=null then print ‘Queue empty’.
+		2. Else
+			Set temp=front
+		 	if temp next != null
+			Print temp->data, and move temp, temp=temp->next, until temp =null.
+			[end of loop]
+		3. print last element
+		4. stop
+		
+
+
+*/
 #include<stdio.h>
 #include<stdlib.h>
 
