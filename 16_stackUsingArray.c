@@ -1,11 +1,52 @@
 		
 
+		/*
+		Aim
+		Implement stack using array.
+				
+		Algorithm
+		
+			1. Start
+			2. Globaly declare array stack choice,n,top,x,i
+			3. Set top = -1
+			4. Read size of stack as n
+			5. Read choice.
+			6. If choice=1 call push()
+			7. If choice=2 call pop()
+			8. If choice=3 call display()
+			9. If choice=4 then Exit.
+		Procedure:-
+		
+		push()
+			1. Start
+			2. If top is greater than or equal to n-1 goto step 3 else 4
+			3. Return STACK is overflow
+			4. Read value to be pushed as x
+			5. Increment top by 1
+			6. Assign value x to stack of id top
+			[End of loop]
+			7. Stop
+		pop()
+			1. Start
+			2. If top less than or equals to -1 goto step 3 else step 4
+			3. Stack is underflow
+			4. Return The popped element is %d, of stack[top]
+			5. Decrement top by one
+			[End of loop]
+			6. Stop
+		display()
+			1. Start
+			2. If top is greater than or equals zero go step 3 else
+			3. Print the elements in stack
+			4. Repeat steps 5 and 6 till i from top reaches zero
+			5. Print value of stack[i]
+			6. Print Request for next choice;
+			[End of loop]
+			7. Stop
 
-		// Implementation of Stack Using Array.
-
-
-
-
+		
+		*/
+		
 		#include <stdio.h>
 		#include <stdlib.h>
 		 
