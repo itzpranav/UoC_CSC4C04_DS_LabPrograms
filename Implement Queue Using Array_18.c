@@ -1,3 +1,41 @@
+/*
+	Aim
+	Implement queue using array.
+
+	Algorithm
+
+		1. Start
+		2. Set front=-1,rear=-1
+		3. Read choice
+		4. If choice=1, call insert()
+		5. If choice=2, call delete()
+		6. If choice=3, call display()
+		7. If choice=4, Quit.
+	Procedure:-
+
+	insert()
+		1. If rear=MAX-1, then print Queue overflow
+		2. Else if front=-1, then set front=0, read queue[rear++]
+		[end of if structure]
+		3. Return
+	delete()
+		1. If front=-1 or front>rear
+		 Print ‘queue underflow’.
+		2. Else
+		 Print deleted element queue_array[front].
+		 front=front+1.
+		[end of if structure]
+		3. Return
+	display()
+		1. If front=-1, print ‘queue empty’
+		 Else print queue
+		2. For i=front and i<rear then
+		3. i=i+1
+		4. Print queue.
+		5. Return
+
+*/
+
 #include<stdio.h>
 #include<curses.h>
 #include<stdlib.h>
